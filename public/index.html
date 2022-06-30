@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Drip</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <!-- <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <style>
+    
+                
+                    .point-cursor { cursor: pointer; } /* specific elements */
+                  </style>
+
+                <path id="drip1"   class="point-cursor" d="M 0 0 v 100 a 50 50 1 0 0 100 0 v -100 Z"  fill="red">
+                    <animate
+                  
+                    id="dripAnim1"
+                    attributeName="d" 
+                    dur="0.5" 
+                    type="translate"
+                    begin="indefinite; "
+                    repeatCount="1" 
+                    calcMode="spline"
+                    keySplines=".21,.3,.01,.98"
+                    values="M 0 0 v 100 a 50 50 1 0 0 100 0 v -100 Z ; M 0 0 v 100 a 50 50 1 0 0 100 0 v -100 Z"
+                    />
+                </path>
+
+
+
+                <path id="ball1" d="M 100 0 v 100 a 50 50 0 0 1 100 0 v -100 Z"  fill="red">
+                <animate
+                id="anim1"
+                attributeName="d" 
+                from="M 100 0 v 100 a 50 50 0 0 1 100 0 v -100 Z" 
+                to="M 100 0 v 200 a 50 50 0 0 1 100 0 v -200 Z"
+                dur="1" 
+                type="translate"
+                begin="0s; "
+                repeatCount="1" 
+                fill="freeze"
+                calcMode="spline"
+                keySplines="0.4 0 0.2 1"
+                values="
+                M 100 0 v 200 a 50 50 0 0 1 100 0 v -200 Z
+                ;
+                M 100 0 v 100 a 50 50 0 0 1 100 0 v -100 Z
+                "
+                />
+                <!-- <animate
+                id="anim2"
+                attributeName="d" 
+                from="M 100 0 v 200
+                a 50 50 0 0 1 100 0
+                v -200 Z"
+                to="M 100 0 v 100
+                a 50 50 0 0 1 100 0
+                v -100 Z" 
+                dur="1" 
+                type="translate"
+                begin="anim1.end"
+                easing="ease-in-out"
+                /> -->
+                <!-- </path>
+                
+              </svg>  -->
+        </div>
+        
+        <script src="drip.js" async defer></script>
+    </body>
+</html>

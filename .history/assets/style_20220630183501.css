@@ -1,0 +1,10 @@
+body{
+    margin: 0px;
+    background-color:darkblue;
+}
+
+#container{
+    height: 90vh;
+}
+
+.point-cursor { cursor: pointer; }
