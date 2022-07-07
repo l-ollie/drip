@@ -1,11 +1,15 @@
-// @ts-check
+// // @ts-check
+// import SvgEdit from './SvgEdit.js';
+
+// const svgEdit = new SvgEdit();
+// console.log(svgEdit.msg('blaaaa'));
 
 function makeSVG() {
 	const amount = 25;
 	const height = 200;
 	let currentXPos = 0;
 
-	const windowWidth = window.innerWidth;
+	const windowWidth = getElementById('container-drip');
 	const pathWidth = Math.ceil(windowWidth / amount);
 
 	let svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -157,3 +161,20 @@ container.onmousedown = function(e) {
 		}
 	};
 };
+
+function shuffle(array) {
+	let currentIndex = array.length,
+		randomIndex;
+
+	// While there remain elements to shuffle.
+	while (currentIndex != 0) {
+		// Pick a remaining element.
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[ array[currentIndex], array[randomIndex] ] = [ array[randomIndex], array[currentIndex] ];
+	}
+
+	return array;
+}
